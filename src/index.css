@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+.mix-blaend-mode{
+    @apply text-black ;
+    mix-blend-mode: color-burn;
+}
+.circle{
+    @apply text-white;
+}
+.circle::before{
+    @apply text-white;
+    content: " ";
+    width: 10px ;
+    height: 10px; 
+    border-radius: 30px;
+    background-color: #fff;
+    border: 1px solid #000;
+}
